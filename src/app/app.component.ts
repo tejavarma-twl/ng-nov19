@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pro1';
+  title = 'Welcome Team for angular!';
+  title2 = "Yes its good!"
+  sampletext = "<a href='#'>This is property binding</a>"
+
+  callaFun(){
+    alert("ok")
+  }
 }
