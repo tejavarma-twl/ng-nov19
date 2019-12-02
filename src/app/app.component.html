@@ -1,8 +1,12 @@
-<h1>Hello People!</h1>
-<h2>{{title}}</h2>
-<h3>{{title2}}</h3>
+<!-- <ul class="list-group">
+    <li class="list-group-item">{{itemsList}}</li>
+  </ul>
+<button (click)="addItems()" class="btn btn-primary">Click to add item!</button>
+<button (click)="addItemsChange()" class="btn btn-primary">Click to change item!</button> -->
 
-<button (click)="callaFun()">Click this man!</button>
 
-<div [innerHTML]="sampletext"></div>
-<div>{{sampletext}}</div>
+<h2 class="text-center">Button Couter</h2>
+<div class="p-3 bg-primary text-light text-center">{{counter}}</div>
+<p class="p-3 text-danger">{{warning}}</p>
+<button class="btn btn-primary" (click)="incrementCount()">+</button>
+<button class="btn btn-danger" (click)="decrementCount()">-</button>

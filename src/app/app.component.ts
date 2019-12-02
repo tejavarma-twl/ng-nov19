@@ -6,11 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Welcome Team for angular!';
-  title2 = "Yes its good!"
-  sampletext = "<a href='#'>This is property binding</a>"
+  itemsList = "anything"
+  counter = 0;
+  warning = "";
 
-  callaFun(){
-    alert("ok")
+  incrementCount(){
+    this.warning = "";
+    this.counter = this.counter+1
   }
+  decrementCount(){
+    if(this.counter==0){
+      this.warning = "Can't got less than 0";
+    }else{
+      this.counter = this.counter-1
+    }
+  }
+
+  addItems(){
+    this.itemsList = "something"
+  }
+  addItemsChange(){
+    this.itemsList = "fewthings"
+  }
+
 }
