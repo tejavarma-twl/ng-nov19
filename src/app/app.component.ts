@@ -9,6 +9,7 @@ export class AppComponent {
   itemsList = "anything"
   counter = 0;
   warning = "";
+  username = "Hello guys!"
 
   incrementCount(){
     this.warning = "";
