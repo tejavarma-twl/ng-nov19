@@ -10,6 +10,23 @@ export class AppComponent {
   counter = 0;
   warning = "";
   username = "Hello guys!"
+  status = true
+  fruits = []
+
+  a = `asdasd   
+  asdasdasd`;     //back ticks
+
+  showhidebutton(){
+    this.status = !this.status;
+    this.fruits.push('mango');
+    // if(this.status===true){
+    //   this.status = false
+    // }else{
+    //   this.status = true
+    // }
+    
+  }
+
 
   incrementCount(){
     this.warning = "";

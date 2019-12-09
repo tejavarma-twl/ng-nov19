@@ -3,17 +3,24 @@
   </ul>
 <button (click)="addItems()" class="btn btn-primary">Click to add item!</button>
 <button (click)="addItemsChange()" class="btn btn-primary">Click to change item!</button> -->
-<app-header></app-header>
-<app-shared></app-shared>
+<!-- <app-header></app-header>
+<app-shared></app-shared> -->
 <!-- <h2 class="text-center">Button Couter</h2>
 <div class="p-3 bg-primary text-light text-center">{{counter}}</div>
 <p class="p-3 text-danger">{{warning}}</p>
 <button class="btn btn-primary" (click)="incrementCount()">+</button>
 <button class="btn btn-danger" (click)="decrementCount()">-</button> -->
-
+<!-- 
 <input type="text" [(ngModel)]="username">
 <div>{{username}}</div>
 <div>{{username}}</div>
 <div>{{username}}</div>
 
-<app-footer></app-footer>
+<app-footer></app-footer> -->
+<input type="text">
+<button (click)="showhidebutton()">Click</button>
+<!-- <p>{{status}}</p> -->
+<!-- <b *ngIf="status" id="my-tag" class="p-5">Hello</b> -->
+<ul *ngIf="fruits">
+  <li *ngFor="let f of fruits">{{f}}</li>
+</ul>
